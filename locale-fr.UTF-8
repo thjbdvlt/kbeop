@@ -1,0 +1,15 @@
+# UTF-8 (Unicode) compose sequence
+
+<dead_grave> <e> : "è" egrave
+<dead_grave> <eacute> : ecircumflex
+<dead_grave> <a> : "@" at
+<dead_grave> <agrave> : acircumflex
+<dead_grave> <U> : ucircumflex
+<dead_grave> <u> : ugrave
+<dead_grave> <o> : ocircumflex
+<dead_grave> <i> : icircumflex
+<dead_grave> <c> : ccedilla
+<dead_grave> <apostrophe> : "’"
+<dead_grave> <equal> : notequal
+<dead_grave> <dead_grave> : asciicircum
+<dead_grave> <space> : grave
