@@ -1,4 +1,6 @@
-clavier BÉPO Modifié utilisant la rangée des touches fonctions (macbook)
+clavier BÉPO modifié.
+
+toutes les touches sont montées de deux rangées pour placer sous les pouces les touches Return, Escape, BackSpace, Tab ainsi que les touches modificatrices (+ quelques aménagements).
 
 ```
 kbéop   vdlz
