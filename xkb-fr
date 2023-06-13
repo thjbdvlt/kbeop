@@ -36,7 +36,7 @@ xkb_symbols "toutenhaut" {
 
     key <AE06> { [ ] };
 
-    key <AE07> { [ w, W, 0, VoidSymbol, leftdoublequotemark ] };
+    key <AE07> { [ w, W, 0, VoidSymbol, underscore ] };  // leftdoublequotemark
 
     key <AE08> { [ t, T, 1, VoidSymbol, minus  ] };
     key <AE09> { [ s, S, 2, VoidSymbol, equal ] };
@@ -71,17 +71,17 @@ xkb_symbols "toutenhaut" {
 
     key <AC05> { [ ], overlay1 = <ESC> };
 
-    key <AC06> { [ Alt_L ], overlay1 = <ESC> };
-    key <AC07> { [ Control_R ], overlay1 = <ESC> };
+    key <AC06> { [ Control_R ], overlay1 = <ESC> };
+    key <AC07> { [ Tab ], overlay1 = <ESC> };
 
-    key <AB02> { [ Tab ], overlay1 = <ESC> };
-    key <AB03> { [ space, space, underscore, space], overlay1 = <ESC> };
+    key <AB02> { [ ISO_Level3_Shift, ISO_Level3_Shift, ISO_Level3_Shift, ISO_Level3_Shift, ISO_Level3_Shift ], overlay1 = <ESC> };
+    key <AB03> { [ space, space, space, space, space ] , overlay1 = <ESC> };
     key <AB04> { [ Return ], overlay1 = <ESC> };
 
     key <AB05> { [ Shift_L, Shift_L, Shift_L, Shift_L, Shift_L ], overlay1 = <ESC> };
     key <AB06> { [ ISO_Level5_Shift ], overlay1 = <ESC> };
 
-    key <AB07> { [ ], overlay1 = <ESC> }; // (Ici il serait possible de mettre quelque chose.)
+    key <AB07> { [ Hyper_L ], overlay1 = <ESC> }; // (Ici il serait possible de mettre quelque chose.)
 
-    key <SPCE> { [ ISO_Level3_Shift, ISO_Level3_Shift, ISO_Level3_Shift, ISO_Level3_Shift, ISO_Level3_Shift ], overlay1 = <ESC> };
+    key <SPCE> { [ Alt_L ], overlay1 = <ESC> };
 };
