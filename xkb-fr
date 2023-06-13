@@ -7,42 +7,42 @@ xkb_symbols "toutenhaut" {
     // Les touches fonctions sont utilisées comme première rangée de caractères
 
     key <ESC> { [  ] };  // Escape est placé ailleurs
-    key <FK01> { [ k, K, ampersand ] };
+    key <FK01> { [ k, K, VoidSymbol, VoidSymbol, ampersand ] };
 
-    key <FK02> { [ b, B, bar, VoidSymbol, VoidSymbol ] };
-    key <FK03> { [ eacute, Eacute, braceleft, VoidSymbol, egrave ] };
-    key <FK04> { [ o, O, braceright, VoidSymbol, ecircumflex ] };
-    key <FK05> { [ p, P, percent, VoidSymbol, VoidSymbol ] };
+    key <FK02> { [ b, B, VoidSymbol, VoidSymbol, bar ] };
+    key <FK03> { [ eacute, Eacute, ecircumflex, Ecircumflex, braceleft ] };
+    key <FK04> { [ o, O, ocircumflex, Ocircumflex, braceright ] };
+    key <FK05> { [ p, P, paragraph, VoidSymbol, percent ] };
 
     key <FK06> { [  ] };
 
-    key <FK07> { [ v, V, guillemotleft, VoidSymbol, VoidSymbol ] };
-    key <FK08> { [ d, D, less, VoidSymbol, VoidSymbol ] };
-    key <FK09> { [ l, L, greater, VoidSymbol, VoidSymbol ] };
-    key <FK10> { [ z, Z, guillemotright, VoidSymbol, VoidSymbol ] };
+    key <FK07> { [ v, V, 6, VoidSymbol, guillemotleft ] };
+    key <FK08> { [ d, D, 7, VoidSymbol, less ] };
+    key <FK09> { [ l, L, 8, VoidSymbol, greater ] };
+    key <FK10> { [ z, Z, 9, VoidSymbol, guillemotright ] };
 
     key <FK11> { [  ] };  // (Ici il serait possible de mettre quelque chose.)
 
     // Seconde rangée
 
     key <TLDE> { [ ] };
-    key <AE01> { [ agrave, Agrave, at, VoidSymbol, acircumflex ] };
+    key <AE01> { [ agrave, Agrave, acircumflex, Acircumflex, at ] };
 
-    key <AE02> { [ a, A, dollar, VoidSymbol, 5 ] };
-    key <AE03> { [ u, U, parenleft, VoidSymbol, 6 ] };
-    key <AE04> { [ e, E, parenright, VoidSymbol, 7 ] };
-    key <AE05> { [ i, I, asciicircum, VoidSymbol, 8 ] };
+    key <AE02> { [ a, A, ucircumflex, Ucircumflex, dollar ] };
+    key <AE03> { [ u, U, ugrave, Ugrave, parenleft ] };
+    key <AE04> { [ e, E, egrave, Egrave, parenright ] };
+    key <AE05> { [ i, I, icircumflex, Icircumflex, asciicircum ] };
 
-    key <AE06> { [ j, J, asciitilde, VoidSymbol, 9 ] };
+    key <AE06> { [ j, J, grave, VoidSymbol, asciitilde ] };
 
-    key <AE07> { [ w, W, leftdoublequotemark, VoidSymbol, 0 ] };
+    key <AE07> { [ w, W, 0, VoidSymbol, leftdoublequotemark ] };
 
-    key <AE08> { [ t, T, minus, VoidSymbol, 1  ] };
-    key <AE09> { [ s, S, equal, VoidSymbol, 2 ] };
-    key <AE10> { [ r, R, slash, VoidSymbol, 3 ] };
-    key <AE11> { [ n, N, backslash, VoidSymbol, 4 ] }; 
+    key <AE08> { [ t, T, 1, VoidSymbol, minus  ] };
+    key <AE09> { [ s, S, 2, VoidSymbol, equal ] };
+    key <AE10> { [ r, R, 3, VoidSymbol, slash ] };
+    key <AE11> { [ n, N, 4, VoidSymbol, backslash ] }; 
 
-    key <AE12> { [ m, M, rightdoublequotemark ] };
+    key <AE12> { [ m, M, 5, VoidSymbol, rightdoublequotemark ] };
     key <BKSP> { [ ] };
 
     // Troisième rangée
@@ -50,18 +50,18 @@ xkb_symbols "toutenhaut" {
     key <TAB> { [  ] };
 
     key <AD01> { [ q, Q ] };
-    key <AD02> { [ x, X, bracketleft, VoidSymbol, ugrave ] };
-    key <AD03> { [ y, Y, bracketright ] };
-    key <AD04> { [ period, colon, question ] };
+    key <AD02> { [ x, X, ugrave, VoidSymbol, bracketleft ] };
+    key <AD03> { [ y, Y, VoidSymbol, VoidSymbol, bracketright ] };
+    key <AD04> { [ period, colon, VoidSymbol, VoidSymbol, question ] };
 
-    key <AD05> { [ comma , semicolon, exclam, Voidsymbol ] };
+    key <AD05> { [ comma, semicolon, VoidSymbol, Voidsymbol, exclam ] };
 
-    key <AD07> { [ g, G, dead_grave ] };
+    key <AD07> { [ g, G, VoidSymbol, VoidSymbol, dead_grave ] };
 
-    key <AD08> { [ apostrophe, quotedbl, plus, VoidSymbol ] };
-    key <AD09> { [ c, C, numbersign, VoidSymbol, ccedilla ] };
-    key <AD10> { [ h, H, asterisk, VoidSymbol ] };
-    key <AD11> { [ f, F ] };
+    key <AD08> { [ apostrophe, quotedbl, VoidSymbol, VoidSymbol, plus ] };
+    key <AD09> { [ c, C, ccedilla, Ccedilla, numbersign ] };
+    key <AD10> { [ h, H, VoidSymbol, VoidSymbol, asterisk ] };
+    key <AD11> { [ f, F, VoidSymbol, VoidSymbol, VoidSymbol ] };
 
     key <AD12> { [ ] };
     
@@ -74,12 +74,12 @@ xkb_symbols "toutenhaut" {
     key <AC08> { [ Control_R ], overlay1 = <ESC> };
 
     key <AB03> { [ Tab ], overlay1 = <ESC> };
-    key <AB04> { [ space, underscore, space, space], overlay1 = <ESC> };
+    key <AB04> { [ space, space, underscore, space], overlay1 = <ESC> };
     key <AB05> { [ Return ], overlay1 = <ESC> };
 
-    key <AB06> { [ Shift_L, Shift_R ], overlay1 = <ESC> };
-    key <AB07> { [ ISO_Level3_Shift ], overlay1 = <ESC> };
+    key <AB06> { [ Shift_L, Shift_L, Shift_L, Shift_L, Shift_L ], overlay1 = <ESC> };
+    key <AB07> { [ ISO_Level5_Shift ], overlay1 = <ESC> };
     key <AB07> { [ ], overlay1 = <ESC> }; // (Ici il serait possible de mettre quelque chose.)
 
-    key <SPCE> { [ ISO_Level5_Shift ], overlay1 = <ESC> };
+    key <SPCE> { [ ISO_Level3_Shift, ISO_Level3_Shift, ISO_Level3_Shift, ISO_Level3_Shift, ISO_Level3_Shift ], overlay1 = <ESC> };
 };
