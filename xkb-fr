@@ -1,63 +1,85 @@
-partial alphanumeric_keys
+partial alphanumeric_keys //
 xkb_symbols "toutenhaut" {
 
   key.type[ Group1 ] = "EIGHT_LEVEL";
   include "level5(modifier_mapping)"
 
-    key <ESC> { [  ] };
+    // Les touches fonctions sont utilisées comme première rangée de caractères
+
+    key <ESC> { [  ] };  // Escape est placé ailleurs
     key <FK01> { [ k, K, ampersand ] };
-    key <FK02> { [ b, B, bar ] };
-    key <FK03> { [ eacute, Eacute, braceleft ] };
-    key <FK04> { [ o, O, braceright  ] };
-    key <FK05> { [ p, P, percent ] };
+
+    key <FK02> { [ b, B, bar, VoidSymbol, VoidSymbol ] };
+    key <FK03> { [ eacute, Eacute, braceleft, VoidSymbol, egrave ] };
+    key <FK04> { [ o, O, braceright, VoidSymbol, ecircumflex ] };
+    key <FK05> { [ p, P, percent, VoidSymbol, VoidSymbol ] };
+
     key <FK06> { [  ] };
-    key <FK07> { [ v, V, guillemotleft, VoidSymbol, 4 ] };
-    key <FK08> { [ d, D, less, VoidSymbol, 5 ] };
-    key <FK09> { [ l, L, greater, VoidSymbol, 6 ] };
-    key <FK10> { [ z, Z, guillemotright, VoidSymbol ] };
-    key <FK11> { [  ] };
+
+    key <FK07> { [ v, V, guillemotleft, VoidSymbol, VoidSymbol ] };
+    key <FK08> { [ d, D, less, VoidSymbol, VoidSymbol ] };
+    key <FK09> { [ l, L, greater, VoidSymbol, VoidSymbol ] };
+    key <FK10> { [ z, Z, guillemotright, VoidSymbol, VoidSymbol ] };
+
+    key <FK11> { [  ] };  // (Ici il serait possible de mettre quelque chose.)
+
+    // Seconde rangée
 
     key <TLDE> { [ ] };
-    key <AE01> { [ agrave, Agrave, at ] };
-    key <AE02> { [ a, A, dollar, VoidSymbol, Right ] };
-    key <AE03> { [ u, U, parenleft, VoidSymbol, Up ] };
-    key <AE04> { [ e, E, parenright, VoidSymbol, Down ] };
-    key <AE05> { [ i, I, asciicircum, VoidSymbol, Left ] };
-    key <AE06> { [ j, J, asciitilde ] };
-    key <AE07> { [ w, W, leftdoublequotemark ] };
+    key <AE01> { [ agrave, Agrave, at, VoidSymbol, acircumflex ] };
+
+    key <AE02> { [ a, A, dollar, VoidSymbol, 5 ] };
+    key <AE03> { [ u, U, parenleft, VoidSymbol, 6 ] };
+    key <AE04> { [ e, E, parenright, VoidSymbol, 7 ] };
+    key <AE05> { [ i, I, asciicircum, VoidSymbol, 8 ] };
+
+    key <AE06> { [ j, J, asciitilde, VoidSymbol, 9 ] };
+
+    key <AE07> { [ w, W, leftdoublequotemark, VoidSymbol, 0 ] };
+
     key <AE08> { [ t, T, minus, VoidSymbol, 1  ] };
     key <AE09> { [ s, S, equal, VoidSymbol, 2 ] };
     key <AE10> { [ r, R, slash, VoidSymbol, 3 ] };
-    key <AE11> { [ n, N, backslash, VoidSymbol, 0 ] }; 
+    key <AE11> { [ n, N, backslash, VoidSymbol, 4 ] }; 
+
     key <AE12> { [ m, M, rightdoublequotemark ] };
     key <BKSP> { [ ] };
 
-    key <TAB>  { [  ] };
+    // Troisième rangée
+
+    key <TAB> { [  ] };
+
     key <AD01> { [ q, Q ] };
-    key <AD02> { [ x, X, bracketleft, VoidSymbol, BackSpace ] };
+    key <AD02> { [ x, X, bracketleft, VoidSymbol, ugrave ] };
     key <AD03> { [ y, Y, bracketright ] };
     key <AD04> { [ period, colon, question ] };
-    key <AD05> { [  comma , semicolon, exclam ] };
+
+    key <AD05> { [ comma , semicolon, exclam, Voidsymbol ] };
+
     key <AD07> { [ g, G, dead_grave ] };
-    key <AD08> { [ apostrophe, quotedbl, plus, VoidSymbol, 7 ] };
-    key <AD09> { [ c, C, numbersign, VoidSymbol, 8 ] };
-    key <AD10> { [ h, H, asterisk, VoidSymbol, 9 ] };
+
+    key <AD08> { [ apostrophe, quotedbl, plus, VoidSymbol ] };
+    key <AD09> { [ c, C, numbersign, VoidSymbol, ccedilla ] };
+    key <AD10> { [ h, H, asterisk, VoidSymbol ] };
     key <AD11> { [ f, F ] };
+
     key <AD12> { [ ] };
     
-    key <AC03> { [ BackSpace ] };
-    key <AB02> { [ ISO_Level5_Shift ], overlay1 = <ESC>  };
-    key <AC04> { [ Escape, Escape, Escape, Escape, Escape ] };
+    // Modificateurs (pouces)
 
-    key <AC07> { [ Hyper_L, Prior ], overlay1 = <ESC>  };
-    key <AC08> { [ Tab ], overlay1 = <ESC>  };
+    key <AC04> { [ BackSpace, registered, BackSpace, BackSpace ], overlay1 = <ESC> };
+    key <AC05> { [ Escape, Escape, Escape, Escape, Escape ], overlay1 = <ESC> };
 
-    key <AB03> { [ space, space, underscore, space, space ]};
-    key <AB04> { [ Return ] };
+    key <AC07> { [ Alt_L ], overlay1 = <ESC> };
+    key <AC08> { [ Control_R ], overlay1 = <ESC> };
 
-    key <SPCE> { [ Control_R ], overlay1 = <ESC>  };
-    key <AB07> { [ ISO_Level3_Shift ], overlay1 = <ESC>  };
-    key <AB08> { [ Right ] };
+    key <AB03> { [ Tab ], overlay1 = <ESC> };
+    key <AB04> { [ space, underscore, space, space], overlay1 = <ESC> };
+    key <AB05> { [ Return ], overlay1 = <ESC> };
 
     key <AB06> { [ Shift_L, Shift_R ], overlay1 = <ESC> };
+    key <AB07> { [ ISO_Level3_Shift ], overlay1 = <ESC> };
+    key <AB07> { [ ], overlay1 = <ESC> }; // (Ici il serait possible de mettre quelque chose.)
+
+    key <SPCE> { [ ISO_Level5_Shift ], overlay1 = <ESC> };
 };
