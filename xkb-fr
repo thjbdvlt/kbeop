@@ -6,15 +6,15 @@ xkb_symbols "toutenhaut" {
 
     // Les touches fonctions sont utilisées comme première rangée de caractères
 
-    key <ESC> { [  ] };  // Escape est placé ailleurs
-    key <FK01> { [ k, K, VoidSymbol, VoidSymbol, ampersand ] };
+    key <ESC> { [ k, K, VoidSymbol, VoidSymbol, ampersand ] };
 
-    key <FK02> { [ b, B, VoidSymbol, VoidSymbol, bar ] };
-    key <FK03> { [ eacute, Eacute, ecircumflex, Ecircumflex, braceleft ] };
-    key <FK04> { [ o, O, ocircumflex, Ocircumflex, braceright ] };
-    key <FK05> { [ p, P, paragraph, VoidSymbol, percent ] };
+    key <FK01> { [ b, B, VoidSymbol, VoidSymbol, bar ] };
+    key <FK02> { [ eacute, Eacute, ecircumflex, Ecircumflex, braceleft ] };
+    key <FK03> { [ o, O, ocircumflex, Ocircumflex, braceright ] };
+    key <FK04> { [ p, P, paragraph, VoidSymbol, percent ] };
+    key <FK05> { [ ] };
 
-    key <FK06> { [  ] };
+    key <FK06> { [ ] };
 
     key <FK07> { [ v, V, 6, VoidSymbol, guillemotleft ] };
     key <FK08> { [ d, D, 7, VoidSymbol, less ] };
@@ -25,15 +25,16 @@ xkb_symbols "toutenhaut" {
 
     // Seconde rangée
 
-    key <TLDE> { [ ] };
-    key <AE01> { [ agrave, Agrave, acircumflex, Acircumflex, at ] };
+    key <TLDE> { [ agrave, Agrave, acircumflex, Acircumflex, at ] };
 
-    key <AE02> { [ a, A, ucircumflex, Ucircumflex, dollar ] };
-    key <AE03> { [ u, U, ugrave, Ugrave, parenleft ] };
-    key <AE04> { [ e, E, egrave, Egrave, parenright ] };
-    key <AE05> { [ i, I, icircumflex, Icircumflex, asciicircum ] };
+    key <AE01> { [ a, A, ucircumflex, Ucircumflex, dollar ] };
+    key <AE02> { [ u, U, ugrave, Ugrave, parenleft ] };
+    key <AE03> { [ e, E, egrave, Egrave, parenright ] };
+    key <AE04> { [ i, I, icircumflex, Icircumflex, asciicircum ] };
 
-    key <AE06> { [ j, J, grave, VoidSymbol, asciitilde ] };
+    key <AE05> { [ j, J, grave, VoidSymbol, asciitilde ] };
+
+    key <AE06> { [ ] };
 
     key <AE07> { [ w, W, 0, VoidSymbol, leftdoublequotemark ] };
 
@@ -47,14 +48,12 @@ xkb_symbols "toutenhaut" {
 
     // Troisième rangée
 
-    key <TAB> { [  ] };
+    key <TAB> { [ q, Q ] };
+    key <AD01> { [ x, X, ugrave, VoidSymbol, bracketleft ] };
+    key <AD02> { [ y, Y, VoidSymbol, VoidSymbol, bracketright ] };
+    key <AD03> { [ period, colon, VoidSymbol, VoidSymbol, question ] };
 
-    key <AD01> { [ q, Q ] };
-    key <AD02> { [ x, X, ugrave, VoidSymbol, bracketleft ] };
-    key <AD03> { [ y, Y, VoidSymbol, VoidSymbol, bracketright ] };
-    key <AD04> { [ period, colon, VoidSymbol, VoidSymbol, question ] };
-
-    key <AD05> { [ comma, semicolon, VoidSymbol, Voidsymbol, exclam ] };
+    key <AD04> { [ comma, semicolon, VoidSymbol, Voidsymbol, exclam ] };
 
     key <AD07> { [ g, G, VoidSymbol, VoidSymbol, dead_grave ] };
 
@@ -67,18 +66,21 @@ xkb_symbols "toutenhaut" {
     
     // Modificateurs (pouces)
 
-    key <AC04> { [ BackSpace, registered, BackSpace, BackSpace ], overlay1 = <ESC> };
-    key <AC05> { [ Escape, Escape, Escape, Escape, Escape ], overlay1 = <ESC> };
+    key <AC03> { [ BackSpace, registered, BackSpace, BackSpace ], overlay1 = <ESC> };
+    key <AC04> { [ Escape, Escape, Escape, Escape, Escape ], overlay1 = <ESC> };
 
-    key <AC07> { [ Alt_L ], overlay1 = <ESC> };
-    key <AC08> { [ Control_R ], overlay1 = <ESC> };
+    key <AC05> { [ ], overlay1 = <ESC> };
 
-    key <AB03> { [ Tab ], overlay1 = <ESC> };
-    key <AB04> { [ space, space, underscore, space], overlay1 = <ESC> };
-    key <AB05> { [ Return ], overlay1 = <ESC> };
+    key <AC06> { [ Alt_L ], overlay1 = <ESC> };
+    key <AC07> { [ Control_R ], overlay1 = <ESC> };
 
-    key <AB06> { [ Shift_L, Shift_L, Shift_L, Shift_L, Shift_L ], overlay1 = <ESC> };
-    key <AB07> { [ ISO_Level5_Shift ], overlay1 = <ESC> };
+    key <AB02> { [ Tab ], overlay1 = <ESC> };
+    key <AB03> { [ space, space, underscore, space], overlay1 = <ESC> };
+    key <AB04> { [ Return ], overlay1 = <ESC> };
+
+    key <AB05> { [ Shift_L, Shift_L, Shift_L, Shift_L, Shift_L ], overlay1 = <ESC> };
+    key <AB06> { [ ISO_Level5_Shift ], overlay1 = <ESC> };
+
     key <AB07> { [ ], overlay1 = <ESC> }; // (Ici il serait possible de mettre quelque chose.)
 
     key <SPCE> { [ ISO_Level3_Shift, ISO_Level3_Shift, ISO_Level3_Shift, ISO_Level3_Shift, ISO_Level3_Shift ], overlay1 = <ESC> };
